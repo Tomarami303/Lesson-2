@@ -17,10 +17,11 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Update()
     {
         if (transform.position.z > topBound) {
-            Destroy(gameObject);
+            Destroy(gameObject); //Destroying the game object.
         }
         else if (transform.position.z < lowerBound) {
-            Destroy(gameObject);
+            Destroy(gameObject); //Destroying the animals
+            Debug.Log("Game Over!@!@!@!@!"); //Outputting to unity log.
         }
     }
 }
